@@ -1,0 +1,1 @@
+start ./lab1_3/bin/Debug/net7.0-windows7.0/lab1_3.exe
