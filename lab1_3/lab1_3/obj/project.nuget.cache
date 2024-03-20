@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UquA7+whuntasK4HD2zvgnIKttQZHQ5A0GnCFAkUlzKOyOVmGynJ3J9bIQMAXR9wfMkOYMqFYwV7ObGdJFgUgQ==",
+  "dgSpecHash": "ovduMp02o5xR2+vQhp+i1rzM3Lkn/gCAlnC+hUrfpty3jKUjFx+YX16ozyIIGc5uvPYV6+Q4CKLwBZYQmbAJpg==",
   "success": true,
-  "projectFilePath": "D:\\VSU\\VScode\\IT.Labs\\lab1_3\\lab1_3\\lab1_3.csproj",
+  "projectFilePath": "D:\\VSU\\ИТ\\IT.Labs\\lab1_3\\lab1_3\\lab1_3.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Auriel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\Auriel\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\Auriel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\Auriel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+    "C:\\Users\\sahla\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\sahla\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\sahla\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512"
   ],
   "logs": []
 }
