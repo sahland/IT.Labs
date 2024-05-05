@@ -1,0 +1,1 @@
+start ./bin/Release/net8.0/win-x64/Lab_2.exe

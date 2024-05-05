@@ -1,0 +1,85 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Avalonia.11.0.10\build\Avalonia.props" Condition="Exists('packages\Avalonia.11.0.10\build\Avalonia.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{85463319-1AC0-4F5F-B051-3EA09544665A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>lab2_5</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\lab2_5\FileContentIndex\3be08ebb-6b4e-4c28-9a50-f418af0cdcd1.vsidx" />
+    <None Include=".vs\lab2_5\FileContentIndex\5f949d9a-4684-44a5-aeb4-66b2e2c92ada.vsidx" />
+    <None Include=".vs\lab2_5\FileContentIndex\8cf2581c-8c58-412b-ba43-bd02e604322a.vsidx" />
+    <None Include=".vs\lab2_5\v17\.wsuo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="App.axaml" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Views\MainWindow.axaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.axaml.cs" />
+    <Compile Include="Models\Ellipse.cs" />
+    <Compile Include="Models\Line.cs" />
+    <Compile Include="Models\Point.cs" />
+    <Compile Include="Models\Polygon.cs" />
+    <Compile Include="Models\Shape.cs" />
+    <Compile Include="Models\ShapeType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Views\MainWindow.axaml.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Avalonia.11.0.10\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.11.0.10\build\Avalonia.props'))" />
+    <Error Condition="!Exists('packages\Avalonia.11.0.10\build\Avalonia.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.11.0.10\build\Avalonia.targets'))" />
+  </Target>
+  <Import Project="packages\Avalonia.11.0.10\build\Avalonia.targets" Condition="Exists('packages\Avalonia.11.0.10\build\Avalonia.targets')" />
+</Project>
