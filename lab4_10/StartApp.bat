@@ -1,0 +1,1 @@
+start ./lab4_10/bin/Debug/net7.0-windows/lab4_10.exe
